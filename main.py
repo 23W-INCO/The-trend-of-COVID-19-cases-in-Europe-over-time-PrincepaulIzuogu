@@ -7,11 +7,12 @@ import os
 
 app = Flask(__name__)
 
-# Path to the FHIR bundle data file in the static folder
-fhir_bundle_file_path = os.path.join(app.root_path, 'static', 'fhir_bundle_data.json')
 
-# Global variable to store FHIR bundle data
-fhir_bundle_data = []
+# Path to the processed FHIR bundle data file in the static folder
+processed_fhir_file_path = os.path.join(app.root_path, 'static', 'processed_fhir.json')
+
+# Global variable to store processed FHIR bundle data
+processed_fhir_data = []
 
 def validate_immunization(resource):
     # Simple validation: Check if required fields are present
@@ -34,13 +35,13 @@ def receive_fhir_bundle():
                 print("Received Immunization data:", resource)
 
                 # Append the valid data to the global variable
-                fhir_bundle_data.append(resource)
+                processed_fhir_data.append(resource)
             else:
                 return jsonify({'status': 'error', 'message': 'Invalid Immunization resource'})
 
         # Store the valid data in the file in the static folder
-        with open(fhir_bundle_file_path, 'w') as file:
-            json.dump(fhir_bundle_data, file, indent=2)
+        with open(processed_fhir_file_path, 'w') as file:
+            json.dump(processed_fhir_data, file, indent=2)
 
         return jsonify({'status': 'success'})
 
@@ -50,8 +51,8 @@ def receive_fhir_bundle():
 @app.route('/api/vaccinations', methods=['GET'])
 def get_fhir_bundle():
     try:
-        # Return the stored FHIR bundle data
-        return jsonify(fhir_bundle_data)
+        # Return the stored processed FHIR bundle data
+        return jsonify(processed_fhir_data)
 
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)})
