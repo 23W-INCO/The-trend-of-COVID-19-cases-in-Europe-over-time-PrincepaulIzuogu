@@ -77,8 +77,8 @@ def get_styles():
 
 # Route for serving data.json
 @app.route('/extra_fields.json')
-def get_data():
-    return send_file('static/extra_fields.json')
+def get_processed_fhir():
+    return send_file('static/processed_fhir.json')
 
 # Route for serving data.json
 @app.route('/data.json')
