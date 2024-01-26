@@ -1,25 +1,45 @@
 from flask import Flask, request, jsonify, send_file, redirect, url_for
 import json
 from uuid import uuid4
+from flask import Flask, request, jsonify
+import json
+import os
 
 app = Flask(__name__)
+
+# Path to the FHIR bundle data file in the static folder
+fhir_bundle_file_path = os.path.join(app.root_path, 'static', 'fhir_bundle_data.json')
 
 # Global variable to store FHIR bundle data
 fhir_bundle_data = []
 
-@app.route('/receive_fhir_bundle', methods=['POST'])
+def validate_immunization(resource):
+    # Simple validation: Check if required fields are present
+    required_fields = ['resourceType', 'status', 'vaccineCode', 'patient', 'occurrenceDateTime', 'doseQuantity', 'performer']
+    for field in required_fields:
+        if field not in resource:
+            return False
+    return True
+
+@app.route('/api/vaccinations', methods=['POST'])
 def receive_fhir_bundle():
     try:
         # Assuming the incoming data is a list of Immunization resources
         data = request.get_json()
 
-        # Process and validate the data if needed
+        # Validate and process each Immunization resource
+        for resource in data:
+            if validate_immunization(resource):
+                # Process the data (example: print the received data)
+                print("Received Immunization data:", resource)
 
-        # Append the data to the global variable
-        fhir_bundle_data.extend(data)
+                # Append the valid data to the global variable
+                fhir_bundle_data.append(resource)
+            else:
+                return jsonify({'status': 'error', 'message': 'Invalid Immunization resource'})
 
-        # Store the data in a file
-        with open('fhir_bundle_data.json', 'w') as file:
+        # Store the valid data in the file in the static folder
+        with open(fhir_bundle_file_path, 'w') as file:
             json.dump(fhir_bundle_data, file, indent=2)
 
         return jsonify({'status': 'success'})
@@ -27,7 +47,7 @@ def receive_fhir_bundle():
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)})
 
-@app.route('/get_fhir_bundle', methods=['GET'])
+@app.route('/api/vaccinations', methods=['GET'])
 def get_fhir_bundle():
     try:
         # Return the stored FHIR bundle data
