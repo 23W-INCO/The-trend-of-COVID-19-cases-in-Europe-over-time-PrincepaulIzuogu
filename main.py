@@ -4,85 +4,37 @@ from uuid import uuid4
 
 app = Flask(__name__)
 
-# Existing data (if any)
-existing_data = []
+# Global variable to store FHIR bundle data
+fhir_bundle_data = []
 
-# Data without matching fields in data.json
-extra_data = []
-
-@app.route('/api/vaccinations', methods=['POST'])
-def receive_fhir_bundles():
+@app.route('/receive_fhir_bundle', methods=['POST'])
+def receive_fhir_bundle():
     try:
-        fhir_bundles = request.json  # Assuming the FHIR Bundles are sent as JSON
+        # Assuming the incoming data is a list of Immunization resources
+        data = request.get_json()
 
-        # Extract and convert FHIR Bundles to JSON
-        extracted_data, unmatched_data = extract_and_convert(fhir_bundles)
+        # Process and validate the data if needed
 
-        # Check for duplicates and mismatch before storing
-        check_for_duplicates(extracted_data)
-        check_for_mismatch(extracted_data)
+        # Append the data to the global variable
+        fhir_bundle_data.extend(data)
 
-        # Store the extracted data in static/data.json
-        save_to_data_json(extracted_data)
+        # Store the data in a file
+        with open('fhir_bundle_data.json', 'w') as file:
+            json.dump(fhir_bundle_data, file, indent=2)
 
-        # Store unmatched data in a separate file
-        save_to_extra_data_json(unmatched_data)
+        return jsonify({'status': 'success'})
 
-        return redirect(url_for('success'))
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return jsonify({'status': 'error', 'message': str(e)})
 
-
-@app.route('/api/get_data', methods=['GET'])
-def get_vaccination_data():
+@app.route('/get_fhir_bundle', methods=['GET'])
+def get_fhir_bundle():
     try:
-        with open('static/data.json', 'r') as file:
-            existing_vaccination_data = json.load(file)
-    except FileNotFoundError:
-        return jsonify({'error': 'data.json not found'}), 404
+        # Return the stored FHIR bundle data
+        return jsonify(fhir_bundle_data)
 
-    return jsonify(existing_vaccination_data), 200
-
-
-@app.route('/success')
-def success():
-    return jsonify({"message": "FHIR Bundles received and processed successfully"}), 200
-
-def extract_and_convert(fhir_bundles):
-    extracted_data = []
-    unmatched_data = []
-
-    for fhir_bundle in fhir_bundles:
-        entries = fhir_bundle.get("entry", [])
-
-        for entry in entries:
-            if "resource" in entry:
-                immunization_resource = entry["resource"]
-                extracted_entry = {
-                    "iso_code": immunization_resource["extension"][0]["valueString"],
-                    "date": immunization_resource["occurrenceDateTime"],
-                    "continent": immunization_resource["extension"][1]["valueString"],
-                    "location": immunization_resource["extension"][2]["valueString"],
-                    "total_cases": immunization_resource["extension"][3]["valueDecimal"],
-                    "population": immunization_resource["extension"][4]["valueInteger"],
-                    "total_vaccinations": immunization_resource["extension"][5]["valueInteger"],
-                    "people_vaccinated": immunization_resource["extension"][6]["valueInteger"]
-                }
-                extracted_data.append(extracted_entry)
-
-                # Check for fields in data.json
-                if set(extracted_entry.keys()).issubset(set(existing_data[0].keys())):
-                    existing_data.append(extracted_entry)
-                else:
-                    unmatched_data.append(extracted_entry)
-
-    return extracted_data, unmatched_data
-
-def save_to_extra_data_json(data):
-    extra_data.extend(data)
-    with open('static/extra_data.json', 'w') as extra_data_file:
-        json.dump(extra_data, extra_data_file, indent=2)
-
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)})
 
 # Route for serving index.html
 @app.route('/')
@@ -122,3 +74,5 @@ def get_flag(filename):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+
