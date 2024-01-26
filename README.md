@@ -36,10 +36,8 @@ Due to the data i selected for this visualization, it is easier for the Director
 
 
 ## Speedup video of my App
-https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/01aaaeae-378a-4d3d-b728-2581c7b8fa6d
 
-https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/1939016c-32cf-4425-a06a-62e6f3957f72
-
+https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/8fad1d89-58ef-409d-8eef-2facca3b20fd
 
 ## User Objectives
 
