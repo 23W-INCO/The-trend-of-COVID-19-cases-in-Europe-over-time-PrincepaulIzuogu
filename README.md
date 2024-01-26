@@ -5,13 +5,13 @@
 
 This repository contains static files like Index.html, styles.css and script.js which contains D3.js code for visualizing the distribution of vaccines across all the countries in Europe from 2021 to 2023 and it's trend. The data is sourced from [https://ourworldindata.org/covid-cases] which came in CSV format, i had to change it to json format and then convert it further to FHIR bundle (Immunization) which can be streamed by the user on the url generated from **test_fhir.py** but these data will not be saved because it is a very large dataset. Then my visualization uses a bar chart created with **D3.js** codes, with each country's flag on the tip of the bar providing an interactive and dynamic representation of the vaccination distributions across European countries and over time. i also use **GUNICORN** to export my port.
 
-![Screenshot 2024-01-16 023832](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/daf93574-d558-4d82-bc20-7960f67e493d)
+![Screenshot 2024-01-25 212958](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/387d1726-2a64-427e-b91b-1a000c48d4a5)
+
+![Screenshot 2024-01-25 212628](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/968b43ab-cef9-44f0-bbc5-a5a20b0a8335)
+
+![Screenshot 2024-01-25 213032](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/57560de5-a59b-4f43-bd61-90eafd27a88f)
 
 
-![Screenshot 2024-01-16 023922](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/9b0fa020-8957-4bad-8d26-8d8d6c0f24ad)
-
-
-![Screenshot 2023-12-22 145800](https://github.com/PrincepaulIzuogu/The-Vaccine-Distributions-in-Europe/assets/123191250/ac354bae-053c-4f90-a896-9071ad334145)
 
 ## Key User Group
 **The Director of European Centre for Disease Prevention and Control:** The Director of ECDC is responsible for leading the ECDC’s work in strengthening Europe’s defence against infectious disease.
