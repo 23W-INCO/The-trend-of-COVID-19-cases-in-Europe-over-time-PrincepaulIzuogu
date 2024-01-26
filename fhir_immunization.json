@@ -1,0 +1,2180 @@
+[
+  {
+    "resourceType": "Immunization",
+    "id": "153aba2c-abed-4d45-85ce-6f4914694e99",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-03",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 58723.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "a7dad74f-3797-4cbd-8cb8-5ade82cf4f65",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-04",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 58991.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "4d0f38a0-31f8-4077-b210-6b78a94dc0fd",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-05",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 59438.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "63120f7c-c9ff-430e-b0cf-d63ac470d22e",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-06",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 59623.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "534ec011-1ae4-4587-a50d-6253cd91faa2",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-07",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 60283.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "3b7b9e69-b427-467d-a320-767b8f626082",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-08",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 61008.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "563592a8-1010-4cfd-8c25-3759cf5035e2",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-09",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 61705.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "ef0fef3c-2950-4445-a231-ffdf1c728400",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-10",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 62378.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "4ccc84ad-a187-45a7-bcbe-99e61b917c63",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-11",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 63033.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "8ce66a39-820a-4b3c-bf89-24e574106f5b",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-12",
+    "doseQuantity": {
+      "value": 128.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 63595.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 128.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 128.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "b1c6a8af-56cc-4ca3-a40e-0f19945bd8fe",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-13",
+    "doseQuantity": {
+      "value": 188.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 63971.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 188.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 188.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "96ec179b-429f-4bc3-b259-40ab48e0956f",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-14",
+    "doseQuantity": {
+      "value": 266.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 64627.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 266.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 266.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "b2bc68e7-e5a5-418c-9d97-8b0ce1b8abef",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-15",
+    "doseQuantity": {
+      "value": 308.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 65334.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 308.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 308.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "7adc9d31-bfb4-4b46-8d22-13ecf65c89c4",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-16",
+    "doseQuantity": {
+      "value": 369.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 65994.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 369.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 369.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "2be4e376-1460-4253-9cd3-a8e534248e95",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-17",
+    "doseQuantity": {
+      "value": 405.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 66635.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 405.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 405.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "e9024ce8-000e-4135-bc10-e430ecec21b2",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-18",
+    "doseQuantity": {
+      "value": 447.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 67216.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 447.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 447.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "3a6c51ef-6c96-40a4-b872-ab8cdbe24fe8",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-19",
+    "doseQuantity": {
+      "value": 483.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 67690.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 483.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 483.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "546cbb97-306f-44fc-a13d-ad257f9dc602",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-20",
+    "doseQuantity": {
+      "value": 519.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 67982.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 519.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 519.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "af3ea6c7-da91-470b-bfee-e165cc068104",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-21",
+    "doseQuantity": {
+      "value": 549.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 68568.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 549.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 549.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "a2308a37-a564-4117-b1fa-064a40c0ce96",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-22",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 69238.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "26ceb22c-0b74-4734-9709-895c35cb8a4f",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-23",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 69916.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "5ce6d97e-f5e7-47c3-aa9a-ed77113b17de",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-24",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 70655.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "698052b9-3483-492a-8f87-2060cb7c8da4",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-25",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 71441.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "b47d35e3-682b-4e80-8dac-b4e6a5b94d71",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-26",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 72274.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "a4d69fae-e55c-4663-ab34-c1e08b63702c",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-27",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 72812.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "4f8dd7bc-7e64-4f29-8181-5bffb6317420",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-28",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 73691.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "7ac96229-2979-43e5-9334-a00942eb45c9",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-29",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 74567.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "ecaed59d-9bb5-4aee-a601-035e782431d3",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-30",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 75454.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "6b4c54e2-3bd2-421f-97b4-35a67517421b",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-01-31",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 76350.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "dbd9bbb0-8f0f-4a3c-a968-74d60acd7458",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-02-01",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 77251.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "8f6e5c07-7b81-4207-9d91-6d92fa13edf4",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-02-02",
+    "doseQuantity": {
+      "value": 550.0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 78127.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 550.0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 549.0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "31a5be01-1a5f-4a18-bfea-e8ff396be750",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-02-03",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 78992.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "d513b42a-922a-4267-b7cf-8c2432ab7a2a",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "1119349007"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/ALB"
+    },
+    "occurrenceDateTime": "2021-02-04",
+    "doseQuantity": {
+      "value": 0,
+      "unit": "doses"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+              "code": "AP"
+            }
+          ]
+        },
+        "actor": {
+          "reference": "Organization/example"
+        }
+      }
+    ],
+    "extension": [
+      {
+        "url": "isoCode",
+        "valueString": "ALB"
+      },
+      {
+        "url": "continent",
+        "valueString": "Europe"
+      },
+      {
+        "url": "location",
+        "valueString": "Albania"
+      },
+      {
+        "url": "totalCases",
+        "valueDecimal": 79934.0
+      },
+      {
+        "url": "population",
+        "valueInteger": 2842318
+      },
+      {
+        "url": "totalVaccinations",
+        "valueInteger": 0
+      },
+      {
+        "url": "peopleVaccinated",
+        "valueInteger": 0
+      }
+    ]
+  }
+]
