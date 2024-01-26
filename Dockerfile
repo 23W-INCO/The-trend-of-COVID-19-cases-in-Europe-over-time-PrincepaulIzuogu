@@ -18,4 +18,3 @@ EXPOSE 5000
 
 # Command to run the Python application using Gunicorn
 CMD ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
-
