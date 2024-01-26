@@ -1,112 +1,64 @@
 import requests
 import json
-from fhir.resources.bundle import Bundle, BundleEntry
-from fhir.resources.immunization import Immunization
 
-def convert_to_fhir_bundle(existing_vaccination_data):
-    bundle = {
-        "resourceType": "Bundle",
-        "type": "transaction",  # or "collection" depending on your use case
-        "entry": []
-    }
-
-    for vaccination_record in existing_vaccination_data:
-        fhir_immunization = {
-            "resourceType": "Immunization",
-            "status": "completed",
-            "occurrenceDateTime": vaccination_record["date"],
-            "vaccineCode": {
-                "text": f"COVID-19 Vaccine ({vaccination_record['total_vaccinations']})"
-            },
-            "patient": {
-                "reference": f"Location/{vaccination_record['iso_code']}"
-            },
-            "doseQuantity": {
-                "value": vaccination_record['total_vaccinations'],
-                "unit": "doses"
-            },
-            "note": [
-                {
-                    "text": f"Location: {vaccination_record['location']}"
-                },
-                {
-                    "text": f"Continent: {vaccination_record['continent']}"
-                },
-                {
-                    "text": f"Total Cases: {vaccination_record['total_cases']}"
-                },
-                {
-                    "text": f"Population: {vaccination_record['population']}"
-                },
-                {
-                    "text": f"People Vaccinated: {vaccination_record['people_vaccinated']}"
-                },
-                {
-                    "text": f"People Fully Vaccinated: {vaccination_record['people_fully_vaccinated']}"
-                },
-                {
-                    "text": f"Total Vaccinations Per Hundred: {vaccination_record['total_vaccinations_per_hundred']}"
-                },
-                {
-                    "text": f"People Vaccinated Per Hundred: {vaccination_record['people_vaccinated_per_hundred']}"
-                },
-                {
-                    "text": f"People Fully Vaccinated Per Hundred: {vaccination_record['people_fully_vaccinated_per_hundred']}"
-                }
-                # You can add more fields or notes from your dataset here
-            ]
-            # Add more fields from your dataset as required by FHIR Immunization resource
-        }
-        # Add Immunization resource to the Bundle
-        bundle["entry"].append({
-            "resource": fhir_immunization,
-            "request": {
-                "method": "POST",  # or "PUT" if updating existing resources
-                "url": "Immunization"  # The FHIR resource type
+# Example FHIR Bundles
+fhir_bundles = [
+    {
+        "resourceType": "Immunization",
+        "id": "ce655d9a-5986-40cb-93e3-728856fb3d61",
+        "status": "completed",
+        "vaccineCode": {"coding": [{"system": "http://snomed.info/sct", "code": "1119349007"}]},
+        "patient": {"reference": "Patient/ALB"},
+        "occurrenceDateTime": "2021-01-13",
+        "doseQuantity": {"value": 188.0, "unit": "doses"},
+        "performer": [
+            {
+                "function": {"coding": [{"system": "http://terminology.hl7.org/CodeSystem/v2-0443", "code": "AP"}]},
+                "actor": {"reference": "Organization/example"}
             }
-        })
+        ]
+    },
+    {
+        "resourceType": "Immunization",
+        "id": "f61e26b8-177a-4aad-89d6-05fba2af6a55",
+        "status": "completed",
+        "vaccineCode": {"coding": [{"system": "http://snomed.info/sct", "code": "1119349007"}]},
+        "patient": {"reference": "Patient/ALB"},
+        "occurrenceDateTime": "2021-01-14",
+        "doseQuantity": {"value": 266.0, "unit": "doses"},
+        "performer": [
+            {
+                "function": {"coding": [{"system": "http://terminology.hl7.org/CodeSystem/v2-0443", "code": "AP"}]},
+                "actor": {"reference": "Organization/example"}
+            }
+        ]
+    }
+    # Add more Immunization entries as needed
+]
 
-    yield bundle
+# Function to send FHIR Bundles to the Flask app
+def send_fhir_bundles(fhir_bundles):
+    try:
+        send_data_to_flask_app(fhir_bundles)
+        return True
+    except Exception as e:
+        print(f"Error: {e}")
+        return False
 
-# Reading existing vaccination data from data.json
-try:
-    with open('static/data.json', 'r') as file:
-        existing_vaccination_data = json.load(file)
-except FileNotFoundError:
-    print('data.json not found')
-    existing_vaccination_data = []
+def send_data_to_flask_app(data):
+    url = "http://localhost:5000/api/vaccinations"
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(url, json=data, headers=headers)
 
-# Example vaccination data creation (you may replace this with your actual data)
-example_vaccination_data = list(convert_to_fhir_bundle(existing_vaccination_data))
+    if response.status_code == 200:
+        print("Data sent successfully.")
+    else:
+        print(f"Error sending data. Status Code: {response.status_code}, Content: {response.content}")
 
-# Splitting example_vaccination_data into batches of 100 records each
-batch_size = 100
-batches = [example_vaccination_data[i:i + batch_size] for i in range(0, len(example_vaccination_data), batch_size)]
+# Send FHIR Bundles to the Flask app without processing
+success = send_fhir_bundles(fhir_bundles)
 
-def generate_api_url(host='localhost', port=5000):
-    return f'http://{host}:{port}/api/vaccinations'
-
-# Generate API URL
-api_url = generate_api_url()  # Generate the URL
-print("API URL:", api_url)  # Print the generated URL to the terminal
-
-# Stream the data from the API endpoint
-response = requests.get(api_url)
-
-# Check the response status and process the data if needed
-if response.status_code == 200:
-    streamed_data = response.json()
-    
-    # Print the first 5 entries
-    print("Printing the first 5 entries:")
-    for entry in streamed_data.get("entry", [])[:5]:
-        print(json.dumps(entry, indent=2))
-
-    print("\n---\n")  # Add a separator between the first and last 5 entries
-
-    # Print the last 5 entries
-    print("Printing the last 5 entries:")
-    for entry in streamed_data.get("entry", [])[-5:]:
-        print(json.dumps(entry, indent=2))
+if success:
+    print("FHIR Bundles sent successfully.")
 else:
-    print("Failed to fetch data")
+    print("Error sending FHIR Bundles.")
