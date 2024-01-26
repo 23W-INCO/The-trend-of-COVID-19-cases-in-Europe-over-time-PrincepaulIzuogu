@@ -7,15 +7,16 @@ app = Flask(__name__)
 # Existing data (if any)
 existing_data = []
 
+# Data without matching fields in data.json
+extra_data = []
+
 @app.route('/api/vaccinations', methods=['POST'])
 def receive_fhir_bundles():
     try:
         fhir_bundles = request.json  # Assuming the FHIR Bundles are sent as JSON
-        print("Received FHIR Bundles:", json.dumps(fhir_bundles, indent=2))
 
         # Extract and convert FHIR Bundles to JSON
-        extracted_data, extra_fields_data = extract_and_convert(fhir_bundles)
-        print("Extracted Data:", json.dumps(extracted_data, indent=2))
+        extracted_data, unmatched_data = extract_and_convert(fhir_bundles)
 
         # Check for duplicates and mismatch before storing
         check_for_duplicates(extracted_data)
@@ -24,13 +25,13 @@ def receive_fhir_bundles():
         # Store the extracted data in static/data.json
         save_to_data_json(extracted_data)
 
-        # Store extra fields in a separate file
-        save_extra_fields_to_file(extra_fields_data)
+        # Store unmatched data in a separate file
+        save_to_extra_data_json(unmatched_data)
 
         return redirect(url_for('success'))
     except Exception as e:
-        print("Error:", str(e))
         return jsonify({"error": str(e)}), 500
+
 
 @app.route('/api/get_data', methods=['GET'])
 def get_vaccination_data():
@@ -49,7 +50,7 @@ def success():
 
 def extract_and_convert(fhir_bundles):
     extracted_data = []
-    extra_fields_data = []  # List to store entries with extra fields
+    unmatched_data = []
 
     for fhir_bundle in fhir_bundles:
         entries = fhir_bundle.get("entry", [])
@@ -57,8 +58,6 @@ def extract_and_convert(fhir_bundles):
         for entry in entries:
             if "resource" in entry:
                 immunization_resource = entry["resource"]
-
-                # Extract relevant fields
                 extracted_entry = {
                     "iso_code": immunization_resource["extension"][0]["valueString"],
                     "date": immunization_resource["occurrenceDateTime"],
@@ -71,24 +70,18 @@ def extract_and_convert(fhir_bundles):
                 }
                 extracted_data.append(extracted_entry)
 
-                # Extract extra fields
-                extra_fields_entry = {
-                    "extra_fields": {
-                        key: immunization_resource[key] for key in immunization_resource if key not in extracted_entry
-                    }
-                }
-                extra_fields_data.append(extra_fields_entry)
+                # Check for fields in data.json
+                if set(extracted_entry.keys()).issubset(set(existing_data[0].keys())):
+                    existing_data.append(extracted_entry)
+                else:
+                    unmatched_data.append(extracted_entry)
 
-    return extracted_data, extra_fields_data
+    return extracted_data, unmatched_data
 
-def save_extra_fields_to_file(extra_fields_data):
-    with open('static/extra_fields.json', 'w') as extra_fields_file:
-        json.dump(extra_fields_data, extra_fields_file, indent=2)
-
-def save_to_data_json(data):
-    existing_data.extend(data)
-    with open('static/data.json', 'w') as data_file:
-        json.dump(existing_data, data_file, indent=2)
+def save_to_extra_data_json(data):
+    extra_data.extend(data)
+    with open('static/extra_data.json', 'w') as extra_data_file:
+        json.dump(extra_data, extra_data_file, indent=2)
 
 
 # Route for serving index.html
