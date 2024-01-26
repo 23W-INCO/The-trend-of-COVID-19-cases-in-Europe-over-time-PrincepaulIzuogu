@@ -105,9 +105,15 @@ def get_styles():
     return send_file('static/styles.css')
 
 # Route for serving data.json
+@app.route('/extra_fields.json')
+def get_data():
+    return send_file('static/extra_fields.json')
+
+# Route for serving data.json
 @app.route('/data.json')
 def get_data():
     return send_file('static/data.json')
+
 
 # Route for serving flags from the root directory
 @app.route('/flags/<filename>')
