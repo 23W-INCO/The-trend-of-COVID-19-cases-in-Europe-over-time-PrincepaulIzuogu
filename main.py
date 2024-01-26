@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, send_file, redirect, url_for
 import json
-from uuid import uuid
+from uuid import uuid4
 import os
 
 app = Flask(__name__)
